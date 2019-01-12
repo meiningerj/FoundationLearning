@@ -1,0 +1,123 @@
+#HighlightContainer {
+  margin-top:50px;
+  width:400px;
+}
+
+#logo {
+  color:white;
+  font-size:4em;
+  width:10vw;
+  text-align:center;
+  padding-top:20px;
+  padding-bottom:10px;
+}
+
+#course {
+  width:300px;
+  height:260px;
+  background-color:green;
+  -webkit-box-shadow:0px 0px 16px 0px rgba(135,135,135,0);
+  -moz-box-shadow:0px 0px 16px 0px rgba(135,135,135,0);
+  box-shadow:0px 0px 16px 0px rgba(135,135,135,0.5);
+  margin:20px;
+  font-family:'Montserrat';
+}
+
+#CourseControls {
+  height:100%;
+  background-color:white;
+  /*border-right-style:solid;*/
+  border-width:1px;
+  border-color:grey;
+  flex:1;
+}
+
+.CourseActionBtn {
+  font-size:36px;
+  color:rgb(128,128,128);
+}
+
+#CourseControls:last-of-type {
+  border-right:none;
+}
+
+#CourseControls:last-of-type {
+  border-right-width:2px;
+}
+
+#CourseTools {
+  height:30%;
+  border-bottom:solid;
+  border-color:orange;
+  flex-direction:row;
+  align-items:stretch;
+}
+
+#CourseDetails {
+  height:70%;
+  background-size:cover;
+  background-position:bottom;
+  padding:10px;
+}
+
+.Assignment, .ToDo {
+  padding-right:50px;
+  padding-bottom:20px;
+}
+
+.Deadline {
+  width:40px;
+  height:40px;
+  border-radius:50%;
+  font-size:50px;
+  color:#fff;
+  line-height:500px;
+  text-align:center;
+  background:orange;
+}
+
+AssignmentCourse {
+  color:orange;
+  font-size:15px;
+}
+
+.AssignmentCourse {
+  color:orange;
+  font-size:15px;
+  text-align:right;
+}
+
+.AssignmentTitle, .ToDoText {
+  color:rgb(86,86,86);
+  font-size:20px;
+  font-family:ABeeZee, sans-serif;
+  font-weight:500;
+  text-align:right;
+  padding-right:15px;
+}
+
+.ToDoCross {
+  width:20px;
+  height:20px;
+  border-radius:50%;
+  font-size:50px;
+  color:#fff;
+  line-height:500px;
+  text-align:center;
+  background:lightblue;
+}
+
+.SectionHeader {
+  color:rgb(86,86,86);
+  border-color:rgb(86,86,86);
+  padding:10px;
+  margin-right:40px;
+  border-width:10px;
+  /*font-family:ABeeZee, sans-serif;*/
+  /*border-bottom-style:double;*/
+  margin-bottom:20px;
+  width:50%;
+  margin-right:50%;
+  font-weight:500;
+}
+

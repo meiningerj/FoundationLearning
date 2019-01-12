@@ -1,0 +1,33 @@
+.h6, h6 {
+  font-family:Montserrat, sans-serif;
+  margin:0px;
+  color:white;
+  font-weight:200;
+}
+
+.h1, h1 {
+  color:white;
+  font-family:'Montserrat';
+}
+
+.h5, h5 {
+  font-family:Montserrat, sans-serif;
+  margin:0px;
+  color:white;
+  font-weight:200;
+  font-size:1.5vw;
+}
+
+.h2, h2 {
+  color:white;
+}
+
+.h4, h4 {
+  font-family:Montserrat, sans-serif;
+  font-weight:400;
+}
+
+body {
+  color:rgb(86,86,86);
+}
+

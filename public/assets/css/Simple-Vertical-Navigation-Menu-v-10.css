@@ -1,0 +1,67 @@
+ul.vertical-nav-list {
+  list-style-type:none;
+  padding-left:0px;
+  margin-left:0;
+  font-family:'Montserrat';
+  text-align:center;
+  padding-top:40px;
+}
+
+div.vertical-nav {
+  position:absolute;
+  display:block;
+  background-color:#222222;
+  margin-right:80%;
+  height:100%;
+  z-index:1;
+  text-align:center;
+}
+
+span.active-link {
+  width:0;
+  height:0;
+  float:right;
+  border-top:10px solid transparent;
+  border-right:9px solid white;
+  border-bottom:10px solid transparent;
+  position:absolute;
+  top:50%;
+  right:0;
+}
+
+li.vnav-li {
+  padding-top:10px;
+  margin-top:10px;
+  margin-bottom:10px;
+  padding-bottom:10px;
+}
+
+a.vnav-link {
+  color:grey;
+  font-size:15px;
+}
+
+a.active-link.vnav-link {
+  color:orange;
+}
+
+h4 {
+  color:white;
+  padding-left:10px;
+}
+
+li.vnav-li:HOVER {
+  background-color:black;
+}
+
+a.vnav-link:HOVER {
+  color:white;
+}
+
+#Highlight {
+  height:40vh;
+  background-image:url("low-poly-texture-14.png");
+  background-size:cover;
+  background-position:bottom;
+}
+
