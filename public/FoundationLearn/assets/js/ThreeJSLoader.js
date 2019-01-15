@@ -7,7 +7,7 @@ document.getElementById("canvas").appendChild( renderer.domElement );
 
     var loader = new THREE.GLTFLoader();
 
-     loader.load( 'file:///Users/jamie/Documents/Motherboard.glb', function ( gltf ) {
+     loader.load( 'Motherboard.glb', function ( gltf ) {
 
 	    scene.add( gltf.scene );
 
