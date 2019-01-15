@@ -1,0 +1,724 @@
+.h6, h6 {
+  font-family: Montserrat, sans-serif;
+  margin: 0px;
+  color: white;
+  font-weight: 200;
+}
+
+.h1, h1 {
+  color: white;
+  font-family: 'Montserrat';
+}
+
+.h5, h5 {
+  font-family: Montserrat, sans-serif;
+  margin: 0px;
+  color: white;
+  font-weight: 200;
+  font-size: 1.5vw;
+}
+
+.h2, h2 {
+  color: white;
+}
+
+.h4, h4 {
+  font-family: Montserrat, sans-serif;
+  font-weight: 400;
+}
+
+body {
+  color: rgb(86,86,86);
+  background-color: rgb(245,247,250);
+}
+
+#SideNav {
+  background-color: white;
+  width: 12vw;
+  height: 95vw;
+  display: table;
+  margin-top: 5vh;
+  padding-top: 3vh;
+  position: fixed;
+  -webkit-box-shadow: 0px 0px 16px 0px rgba(135,135,135,0);
+  -moz-box-shadow: 0px 0px 16px 0px rgba(135,135,135,0);
+  box-shadow: 0px 0px 16px 0px rgba(135,135,135,0.5);
+  transition: margin 1s;
+  z-index: 2;
+}
+
+ul, li {
+  list-style-type: none;
+  list-style-position: inside;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  padding-left: 1vw;
+  padding-bottom: 0.5vh;
+  padding-top: 0.6vh;
+}
+
+.SectionCard {
+  background-color: white;
+  margin: 10px;
+  padding: 20px;
+  width: 100%;
+}
+
+#OverallGrade {
+  color: orange;
+  text-align: center;
+  padding: 10px;
+}
+
+#CurrentGrade {
+  width: 40%;
+}
+
+@keyframes bake-pie {
+  from {
+    transform: rotate(0deg) translate3d(0,0,0);
+  }
+}
+
+main {
+  width: 400px;
+  margin: 30px auto;
+}
+
+section {
+  margin-top: 30px;
+}
+
+.pieID {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.pie {
+  height: 200px;
+  width: 200px;
+  position: relative;
+  margin: 0 30px 30px 0;
+}
+
+.pie::before {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: 1;
+  width: 100px;
+  height: 100px;
+  background: #EEE;
+  border-radius: 50%;
+  top: 50px;
+  left: 50px;
+}
+
+.pie::after {
+  content: "";
+  display: block;
+  width: 120px;
+  height: 2px;
+  background: rgba(0,0,0,0.1);
+  border-radius: 50%;
+  box-shadow: 0 0 3px 4px rgba(0,0,0,0.1);
+  margin: 220px auto;
+}
+
+.slice {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  clip: rect(0px, 200px, 200px, 100px);
+  animation: bake-pie 1s;
+}
+
+.slice span {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: black;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  clip: rect(0px, 200px, 200px, 100px);
+}
+
+.legend {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  background: #FFF;
+  padding: 15px;
+  font-size: 13px;
+  box-shadow: 1px 1px 0 #DDD,              2px 2px 0 #BBB;
+}
+
+.legend li {
+  width: 130px;
+  height: 1.25em;
+  margin-bottom: 0.7em;
+  padding-left: 0.5em;
+  border-left: 1.25em solid black;
+}
+
+.legend em {
+  font-style: normal;
+}
+
+.legend span {
+  float: right;
+}
+
+em {
+  margin-right: 15px;
+}
+
+#logo {
+  color: white;
+  font-size: 4em;
+  width: 10vw;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+#course {
+  width: 330px;
+  height: 240px;
+  -webkit-box-shadow: 0px 0px 3px 0px rgba(125,133,145,0.5);
+  -moz-box-shadow: 0px 0px 3px 0px rgba(125,133,145,0.5);
+  box-shadow: 0px 0px 3px 0px rgba(125,133,145,0.5);
+  margin: 20px;
+  font-family: 'Montserrat';
+}
+
+#CourseControls {
+  height: 100%;
+  background-color: white;
+  /*border-right-style: solid;*/
+  border-width: 1px;
+  border-color: grey;
+  flex: 1;
+}
+
+.CourseActionBtn {
+  font-size: 36px;
+  color: rgb(128,128,128);
+  cursor: pointer;
+}
+
+#CourseControls:last-of-type {
+  border-right: none;
+}
+
+#CourseControls:last-of-type {
+  border-right-width: 2px;
+}
+
+#CourseTools {
+  height: 30%;
+  border-bottom: solid;
+  border-color: rgba(31,37,58,0.45);
+  flex-direction: row;
+  align-items: stretch;
+}
+
+#CourseCardDetails {
+  height: 70%;
+  background-size: cover;
+  background-position: bottom;
+  padding: 10px;
+}
+
+.Assignment, .ToDo {
+  padding-right: 30px;
+  padding-bottom: 20px;
+}
+
+.Deadline {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 50px;
+  color: #fff;
+  line-height: 500px;
+  text-align: center;
+  background: rgb(31,37,58);
+}
+
+AssignmentCourse {
+  color: orange;
+  font-size: 15px;
+}
+
+.AssignmentCourse, .ModuleEmail {
+  color: orange;
+  font-size: 15px;
+  text-align: right;
+}
+
+.AssignmentTitle, .ToDoText {
+  color: rgb(86,86,86);
+  font-size: 20px;
+  font-family: ABeeZee, sans-serif;
+  font-weight: 200;
+  text-align: right;
+  padding-right: 15px;
+}
+
+.ToDoCross {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  font-size: 50px;
+  color: #fff;
+  line-height: 500px;
+  text-align: center;
+  background: lightblue;
+}
+
+.SectionHeader {
+  color: rgb(86,86,86);
+  padding: 10px;
+  margin-bottom: 20px;
+  font-weight: 300;
+  /*background-color: #1f253a;*/
+}
+
+#nav-icon {
+  margin-right: 10px;
+}
+
+#nav-text {
+  display: table-cell;
+  font-size: 15px;
+  font-weight: 400;
+  font-family: 'Montserrat';
+  color: rgb(86,86,86);
+}
+
+#nav-link {
+  display: table-row;
+}
+
+#NavLink:hover {
+  color: orange;
+}
+
+.navlink-active {
+  background-color: orange;
+  color: white;
+}
+
+.hidden {
+  margin-left: -12vw;
+}
+
+#Menu {
+  border-right: solid;
+  border-width: 1px;
+  border-color: lightgrey;
+  background-color: white;
+  height: 95vh;
+  min-width: 10vw;
+}
+
+#TitleBanner {
+  width: 90vw;
+  height: 8vh;
+  background-color: white;
+}
+
+.ToDoRemove {
+  color: orange;
+}
+
+#CourseCompletion {
+  width: 55vw;
+}
+
+#CourseStats {
+}
+
+#LessonsCompleted {
+  width: 60%;
+}
+
+#LessonScores {
+  padding: 20px;
+  padding-top: 0;
+}
+
+.LessonName {
+  color: rgba(86,86,86,0.6);
+}
+
+.LessonScore {
+  padding-left: 10px;
+}
+
+#CourseDetails {
+  width: 25vw;
+}
+
+.ModuleOwnerName, .AnnouncementTitle {
+  color: rgb(86,86,86);
+  font-size: 20px;
+  font-family: ABeeZee, sans-serif;
+  font-weight: 200;
+  text-align: right;
+}
+
+.fa.fa-copy {
+  margin-left: 5px;
+}
+
+.AnnouncementTitle {
+  font-size: 16px;
+}
+
+.AnnouncementDate {
+  text-align: right;
+  color: rgb(31,37,58);
+  font-size: 12px;
+}
+
+.Announcement {
+  margin-bottom: 10px;
+}
+
+.LessonScoreSection {
+  min-width: 50%;
+}
+
+.CourseFeature {
+  width: 50%;
+  height: 50%;
+  background-color: rgb(31,37,58);
+  color: white;
+  cursor: pointer;
+}
+
+#CourseFeatures, #ContinueLearning {
+  width: 13vw;
+  height: 13vw;
+}
+
+.CourseActionBtn:hover {
+  color: orange;
+}
+
+.CourseFeature:hover {
+  background-color: orange!important;
+}
+
+.LastLesson {
+  width: 100%;
+  height: 100%;
+  /*background-color: rgb(31,37,58);*/
+  padding: 10px;
+  position: relative;
+}
+
+UserName {
+}
+
+#UserName {
+  color: rgb(239,239,239);
+  font-family: 'Montserrat';
+  font-weight: 200;
+}
+
+.MenuItemText {
+  color: rgb(31,37,58);
+  font-family: 'ABeeZee';
+  margin-left: 20px;
+  margin-right: 15px;
+}
+
+.MenuItem, .TopMenuItem {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-bottom: solid;
+  border-top: solid;
+  border-color: white;
+  border-width: 2px;
+}
+
+#Menu {
+  padding-top: 8vh;
+}
+
+.MenuItem.ActiveLink:hover, .TopMenuItem:hover {
+  border-color: rgb(31,37,58);
+  color: orange;
+}
+
+a:hover {
+  text-decoration: none!important;
+}
+
+#TopMenu div:last-child {
+  /*border-bottom: none!important;*/
+}
+
+.divider {
+  border: solid;
+  border-width: 0.5px;
+  border-color: #b8b8b8;
+  margin-bottom: 2px;
+  margin-top: 2px;
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#BottomMenu div:first-child {
+  /*border-top: none!important;*/
+}
+
+.MenuItem.InactiveLink {
+  cursor: not-allowed!important;
+  opacity: 0.5;
+}
+
+.TopMenuItem.OnPage, .MenuItem.OnPage {
+  border-left: solid;
+}
+
+.MenuItemText: hover {
+}
+
+#CompletedLessons {
+  width: 27vw;
+}
+
+.LessonNumber {
+  margin: 0;
+}
+
+.LessonSquare {
+  width: 2.5vw;
+  height: 2.5vw;
+  background: rgb(0,0,0);
+  margin: 10px;
+}
+
+.LessonSquare.Complete {
+  background: rgb(159, 177, 188);
+}
+
+#HighlightContainer {
+  margin-top: 50px;
+  width: 400px;
+}
+
+.LessonSquare.Ongoing {
+  background: rgb(211, 208, 203);
+}
+
+li {
+  font-family: 'Montserrat';
+}
+
+#LessonContainer {
+  width: 95%;
+  height: 80vh;
+}
+
+#VideoContainer {
+  width: 48%;
+  height: 49%;
+}
+
+#VideoNotes {
+  width: 48%;
+  height: 49%;
+  margin-top: -40vh;
+  position: relative;
+}
+
+#AceEditor, #AceEditorOutput, #AceEditorNotes {
+  width: 95%;
+  height: 95%;
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  background-color: lightgrey;
+}
+
+.tab-content {
+  height: 100%;
+  overflow-y: scroll;
+}
+
+#LectureNotes, #CodingInstructions {
+  height: 100%;
+  padding: 20px;
+  background-color: #f5f7fa;
+  position: relative;
+  text-align: left;
+}
+
+#LectureNotesNav, #CodingInstructionsNav {
+  border: none;
+  position: absolute;
+  bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.LectureNavItem {
+  border: none;
+  padding-left: 0;
+}
+
+.LectureNavLink {
+  padding: 2px;
+}
+
+.LectureNavLink.nav-link.active {
+  border: none;
+  color: orange;
+  font-size: 30px;
+  background-color: initial;
+}
+
+.LectureNavLink.nav-link:hover {
+  border-color: rgba(245,247,250,0);
+}
+
+#VideoNotes.NoLectureNotes {
+  margin-top: 10px;
+  height: 95%;
+}
+
+#CodeEditor, #Terminal {
+  width: 48%;
+  position: relative;
+}
+
+#CodeOutput {
+  width: 48%;
+  position: relative;
+}
+
+#RunCode {
+  position: absolute;
+  bottom: 17px;
+  right: 25px;
+  font-size: 22px;
+  padding: 10px 20px;
+  background-color: rgb(31,37,58);
+  border-radius: 5px;
+  color: white;
+}
+
+#CodeOutput.WithInstructions {
+  height: 48.2%;
+  width: initial;
+  margin-bottom: 0;
+}
+
+#AceEditorOutput.WithInstructions {
+  height: 90%;
+}
+
+#OutputAndInstruc {
+  width: 50%;
+  position: relative;
+  text-align: center;
+}
+
+#Instructions {
+  height: 46%;
+  margin-top: 0;
+}
+
+#Resize {
+  cursor: n-resize;
+}
+
+#AceEditorNotes {
+  height: 91%;
+}
+
+#TerminalInstructions {
+  width: 48%;
+}
+
+#terminal {
+  height: 100%;
+  width: 100%;
+}
+
+#ImageHotspotSection {
+  width: 100%;
+}
+
+#HotspotImageCont {
+  width: 90%;
+  height: 90%;
+  position: relative;
+}
+
+#HotspotImage {
+  width: 100%;
+  height: 100%;
+}
+
+#HotspotCont {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.ImageHotspot {
+  background-color: transparent;
+  font-size: 30px;
+  color: orange;
+  position: absolute;
+  padding: 0px;
+  line-height: 0;
+  margin-left: -14px;
+  margin-top: -16px;
+  border: none;
+}
+
+.ImageHotspotText {
+  position: absolute;
+  padding: 5px 10px;
+  background-color: white;
+  max-width: 290px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 2px rgba(86,86,86,0.7);
+  transition: width 1s;
+  width: initial;
+  height: initial;
+}
+
+.Hidden {
+  display: none;
+  width: 0px;
+  height: 0px;
+}
+
+#ImageHotspot1:hover {
+  background-color: transparent;
+  color: orange;
+}
+

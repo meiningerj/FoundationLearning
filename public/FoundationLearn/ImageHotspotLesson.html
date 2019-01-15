@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>FinalYearProject</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=ABeeZee">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
+    <link rel="stylesheet" href="assets/css/Theme.css">
+</head>
+
+<body>
+    <div id="SideNav" class="hidden">
+        <ul style="list-style:none;margin-top:0;margin-left:0;cursor:pointer;">
+            <li id="NavLink" class="navlink-active"><i class="icon ion-ios-home-outline" id="nav-icon" style="font-size:16px;"></i>Dashboard</li>
+            <li id="NavLink"><i class="icon ion-ios-albums-outline" id="nav-icon" style="font-size:16px;"></i>Courses</li>
+            <li id="NavLink"><i class="icon ion-ios-browsers-outline" id="nav-icon" style="font-size:16px;"></i>Assignments</li>
+            <li id="NavLink"><i class="icon ion-ios-star-outline" id="nav-icon" style="font-size:14px;"></i>Certificates</li>
+        </ul>
+    </div>
+    <div style="/*margin-left:10vw;*/">
+        <div class="d-flex justify-content-end align-items-center" style="height: 5vh;position: relative;background-color: #1f253a;"><a href="#" id="NavMenu" style="position:absolute;left:1vw;"><i class="icon ion-android-menu" id="NavmenuIcon" style="color:rgb(255,255,255);"></i></a>
+            <h6 class="text-center" style="position:absolute;left:3vw;"><span style="font-weight:400;">Foundation&nbsp;</span><span>Learn</span></h6>
+            <div class="d-flex justify-content-center align-items-center" style="margin-right:1%;margin-top:0px;">
+                <h6 id="UserName">Jamie Meininger</h6><i class="fa fa-user" style="font-size: 2em;padding: 10px;color: orange;"></i></div>
+        </div>
+        <div class="d-flex">
+            <div id="Menu">
+                <div id="TopMenu">
+                    <div class="TopMenuItem ActiveLink">
+                        <a href="#">
+                            <h6 class="MenuItemText">Course Home</h6>
+                        </a>
+                    </div>
+                    <div class="TopMenuItem ActiveLink">
+                        <a href="#">
+                            <h6 class="MenuItemText">Forum</h6>
+                        </a>
+                    </div>
+                    <div class="TopMenuItem ActiveLink">
+                        <a href="#">
+                            <h6 class="MenuItemText">Calendar</h6>
+                        </a>
+                    </div>
+                    <div class="TopMenuItem ActiveLink">
+                        <a href="#">
+                            <h6 class="MenuItemText">Announcements</h6>
+                        </a>
+                    </div>
+                </div>
+                <div class="divider"></div>
+                <div id="BottomMenu">
+                    <div class="MenuItem ActiveLink OnPage">
+                        <a href="#">
+                            <h6 class="MenuItemText">Lesson 1</h6>
+                        </a>
+                    </div>
+                    <div class="MenuItem InactiveLink">
+                        <h6 class="MenuItemText">Lesson 2</h6>
+                    </div>
+                    <div class="MenuItem InactiveLink">
+                        <h6 class="MenuItemText">Lesson 3</h6>
+                    </div>
+                    <div class="MenuItem InactiveLink">
+                        <h6 class="MenuItemText">Lesson 4</h6>
+                    </div>
+                    <div class="MenuItem InactiveLink">
+                        <h6 class="MenuItemText">Lesson 5</h6>
+                    </div>
+                    <div class="MenuItem InactiveLink">
+                        <h6 class="MenuItemText">Lesson 6</h6>
+                    </div>
+                    <div class="MenuItem InactiveLink">
+                        <h6 class="MenuItemText">Lesson 7</h6>
+                    </div>
+                    <div class="MenuItem InactiveLink">
+                        <h6 class="MenuItemText">Lesson 8</h6>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="d-flex align-items-center" id="TitleBanner">
+                    <h4 id="Title" style="color:rgb(91,91,91);margin-left:1vw;font-weight:200;">Lesson 1</h4>
+                </div>
+                <div class="d-flex" style="flex-wrap: wrap;justify-content: center;padding-top: 2vh;width: 90vw;">
+                    <div class="d-flex flex-wrap" id="LessonContainer">
+                        <div class="d-flex justify-content-center align-items-center SectionCard" id="ImageHotspotSection">
+                            <div id="HotspotImageCont"><img id="HotspotImage">
+                                <div id="HotspotCont"><button class="btn btn-primary ImageHotspot" type="button" id="ImageHotspot1" onclick="hotspot('#ImageHotspotText1')" style="left: 500px;top: 300px;"><i class="fa fa-circle-o"></i></button>
+                                    <div id="ImageHotspotText1" class="ImageHotspotText Hidden" style="left: 500px;top: 320px;">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sit amet mauris vel dui gravida ultricies vel vel ipsum. Nullam lorem lectus, condimentum id luctus eget, dictum cursus mauris. Donec scelerisque
+                                            consequat felis, ac elementum purus molestie varius. Vestibulum lobortis id velit id dignissim. Mauris eleifend molestie nibh.&nbsp;</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/CircularPieChart.js"></script>
+    <script src="assets/js/ColorGenerator.js"></script>
+    <script src="assets/js/three.js"></script>
+    <script src="assets/js/GLTFLoader.js"></script>
+    <script src="assets/js/ThreeJSLoader.js"></script>
+    <script src="assets/js/HotSpot.js"></script>
+    <script src="assets/js/NavMenu.js"></script>
+</body>
+
+</html>

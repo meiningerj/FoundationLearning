@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>FinalYearProject</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=ABeeZee">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
+    <link rel="stylesheet" href="assets/css/Theme.css">
+</head>
+
+<body>
+    <div id="SideNav" class="hidden">
+        <ul style="list-style:none;margin-top:0;margin-left:0;cursor:pointer;">
+            <li id="NavLink" class="navlink-active"><i class="icon ion-ios-home-outline" id="nav-icon" style="font-size:16px;"></i>Dashboard</li>
+            <li id="NavLink"><i class="icon ion-ios-albums-outline" id="nav-icon" style="font-size:16px;"></i>Courses</li>
+            <li id="NavLink"><i class="icon ion-ios-browsers-outline" id="nav-icon" style="font-size:16px;"></i>Assignments</li>
+            <li id="NavLink"><i class="icon ion-ios-star-outline" id="nav-icon" style="font-size:14px;"></i>Certificates</li>
+        </ul>
+    </div>
+    <div style="/*margin-left:10vw;*/">
+        <div class="d-flex justify-content-end align-items-center" style="height: 5vh;position: relative;background-color: #1f253a;"><a href="#" id="NavMenu" style="position:absolute;left:1vw;"><i class="icon ion-android-menu" id="NavmenuIcon" style="color:rgb(255,255,255);"></i></a>
+            <h6 class="text-center" style="position:absolute;left:3vw;"><span style="font-weight:400;">Foundation&nbsp;</span><span>Learn</span></h6>
+            <div class="d-flex justify-content-center align-items-center" style="margin-right:1%;margin-top:0px;">
+                <h6 id="UserName">Jamie Meininger</h6><i class="fa fa-user" style="font-size: 2em;padding: 10px;color: orange;"></i></div>
+        </div>
+        <div class="d-flex">
+            <div id="Menu">
+                <div id="TopMenu">
+                    <div class="TopMenuItem ActiveLink OnPage">
+                        <a href="#">
+                            <h6 class="MenuItemText">Course Home</h6>
+                        </a>
+                    </div>
+                    <div class="TopMenuItem ActiveLink">
+                        <a href="#">
+                            <h6 class="MenuItemText">Forum</h6>
+                        </a>
+                    </div>
+                    <div class="TopMenuItem ActiveLink">
+                        <a href="#">
+                            <h6 class="MenuItemText">Calendar</h6>
+                        </a>
+                    </div>
+                    <div class="TopMenuItem ActiveLink">
+                        <a href="#">
+                            <h6 class="MenuItemText">Announcements</h6>
+                        </a>
+                    </div>
+                </div>
+                <div class="divider"></div>
+                <div id="BottomMenu">
+                    <div class="MenuItem ActiveLink">
+                        <a href="#">
+                            <h6 class="MenuItemText">Lesson 1</h6>
+                        </a>
+                    </div>
+                    <div class="MenuItem InactiveLink">
+                        <h6 class="MenuItemText">Lesson 2</h6>
+                    </div>
+                    <div class="MenuItem InactiveLink">
+                        <h6 class="MenuItemText">Lesson 3</h6>
+                    </div>
+                    <div class="MenuItem InactiveLink">
+                        <h6 class="MenuItemText">Lesson 4</h6>
+                    </div>
+                    <div class="MenuItem InactiveLink">
+                        <h6 class="MenuItemText">Lesson 5</h6>
+                    </div>
+                    <div class="MenuItem InactiveLink">
+                        <h6 class="MenuItemText">Lesson 6</h6>
+                    </div>
+                    <div class="MenuItem InactiveLink">
+                        <h6 class="MenuItemText">Lesson 7</h6>
+                    </div>
+                    <div class="MenuItem InactiveLink">
+                        <h6 class="MenuItemText">Lesson 8</h6>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="d-flex align-items-center" id="TitleBanner" style="width: initial;">
+                    <h4 id="Title" style="color:rgb(91,91,91);margin-left:1vw;font-weight:200;">Course Name</h4>
+                </div>
+                <div class="d-flex" style="flex-wrap:wrap;justify-content:center;padding-top:2vh;">
+                    <div id="CourseCompletion" class="SectionCard">
+                        <div>
+                            <h4 class="SectionHeader">Status</h4>
+                        </div>
+                        <div class="d-flex" id="CourseStats">
+                            <div id="CurrentGrade">
+                                <h6 class="SectionHeader" style="opacity: 0.60;">Current Grade</h6>
+                                <div class="d-flex flex-wrap" style="height: 300px;">
+                                    <div>
+                                        <div style="width: 100%;">
+                                            <h1 id="OverallGrade" style="font-family: Montserrat, sans-serif;font-size: 70px;padding: 0;">68%</h1>
+                                        </div>
+                                        <div class="d-flex flex-wrap" id="LessonScores">
+                                            <div class="d-flex justify-content-center LessonScoreSection">
+                                                <p class="LessonName">Lesson 1:</p>
+                                                <p class="LessonScore">84%</p>
+                                            </div>
+                                            <div class="d-flex justify-content-center LessonScoreSection">
+                                                <p class="LessonName">Lesson 2:</p>
+                                                <p class="LessonScore">45%</p>
+                                            </div>
+                                            <div class="d-flex justify-content-center LessonScoreSection">
+                                                <p class="LessonName">Lesson 3:</p>
+                                                <p class="LessonScore">89%</p>
+                                            </div>
+                                            <div class="d-flex justify-content-center LessonScoreSection">
+                                                <p class="LessonName">Lesson 4:</p>
+                                                <p class="LessonScore">-</p>
+                                            </div>
+                                            <div class="d-flex justify-content-center LessonScoreSection">
+                                                <p class="LessonName">Lesson 5:</p>
+                                                <p class="LessonScore">-</p>
+                                            </div>
+                                            <div class="d-flex justify-content-center LessonScoreSection">
+                                                <p class="LessonName">Lesson 6:</p>
+                                                <p class="LessonScore">-</p>
+                                            </div>
+                                            <div class="d-flex justify-content-center LessonScoreSection">
+                                                <p class="LessonName">Lesson 7:</p>
+                                                <p class="LessonScore">-</p>
+                                            </div>
+                                            <div class="d-flex justify-content-center LessonScoreSection">
+                                                <p class="LessonName">Lesson 8:</p>
+                                                <p class="LessonScore">-</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="LessonsCompleted">
+                                <h6 class="SectionHeader" style="opacity: 0.60;">Lessons Completed</h6>
+                                <div id="ChartHolder"><main>
+  <section>
+    <div class="pieID pie">
+      
+    </div>
+    <ul class="pieID legend">
+      <li>
+        <em>Completed</em>
+        <span style="color:orange;">3</span>
+      </li>
+      <li>
+        <em>Incomplete</em>
+        <span style="color:orange;">1</span>
+      </li>
+      <li>
+        <em>Not Started</em>
+        <span style="color:orange;">4</span>
+      </li>
+    </ul>
+  </section>
+</main></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="CourseDetails" class="SectionCard">
+                        <h4 class="SectionHeader" style="text-align: right;">Course Details</h4>
+                        <h6 class="SectionHeader" style="text-align: right;opacity: 0.60;">Module Owner</h6>
+                        <div class="d-flex justify-content-end align-items-center Assignment">
+                            <div class="d-flex flex-column Details" style="margin-left:20px;">
+                                <h5 class="ModuleOwnerName">Joe Bloggs</h5>
+                                <h6 class="ModuleEmail">joe_bloggs@Iuk.ibm.com</h6>
+                            </div><i class="fa fa-user-circle" style="font-size: 3rem;margin-left: 10px;"></i></div>
+                        <h6 class="SectionHeader" style="text-align: right;opacity: 0.60;">Module Announcements</h6>
+                        <div class="Announcement">
+                            <h5 class="AnnouncementTitle">Ongoing Issues with lesson 5</h5>
+                            <h6 class="AnnouncementDate">28-12-18 14:00</h6>
+                        </div>
+                        <div class="Announcement">
+                            <h5 class="AnnouncementTitle">Follow this instruction to complete Lesson 4</h5>
+                            <h6 class="AnnouncementDate">28-12-18 14:00</h6>
+                        </div>
+                        <div class="Announcement">
+                            <h5 class="AnnouncementTitle">Additional reading and research</h5>
+                            <h6 class="AnnouncementDate">28-12-18 14:00</h6>
+                        </div>
+                        <div class="Announcement">
+                            <h5 class="AnnouncementTitle">Welcome to this course</h5>
+                            <h6 class="AnnouncementDate">28-12-18 14:00</h6>
+                        </div>
+                        <div class="Announcement">
+                            <h6 class="AnnouncementDate" style="color: orange;">More &gt;</h6>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-center align-items-center flex-wrap SectionCard" id="CourseFeatures">
+                        <div class="d-flex flex-wrap" style="width: 100%;height: 100%;">
+                            <div class="d-flex justify-content-center align-items-center CourseFeature RandomBackground"><i class="icon ion-ios-calendar-outline" style="font-size: 4rem;"></i></div>
+                            <div class="d-flex justify-content-center align-items-center CourseFeature RandomBackground"><i class="icon ion-ios-folder-outline" style="font-size: 4rem;"></i></div>
+                            <div class="d-flex justify-content-center align-items-center CourseFeature RandomBackground"><i class="icon ion-ios-chatbubble-outline" style="font-size: 4rem;"></i></div>
+                            <div class="d-flex justify-content-center align-items-center CourseFeature RandomBackground"><i class="icon ion-ios-bell-outline" style="font-size: 4rem;"></i></div>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-center align-items-center flex-wrap SectionCard" id="ContinueLearning">
+                        <div class="flex-wrap LastLesson RandomBackground">
+                            <h6 style="width: 60%;">Continue where you left off</h6>
+                            <h2 style="position: absolute;left: 10px;bottom: 10px;">Lesson 3 &nbsp;<i class="fa fa-chevron-right" style="font-size: 20px;"></i></h2>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-center align-items-center flex-wrap SectionCard" id="CompletedLessons">
+                        <div class="d-flex flex-wrap" style="max-width: 50%;height: 100%;">
+                            <div class="d-flex flex-wrap">
+                                <div class="d-flex justify-content-center align-items-center LessonSquare Complete">
+                                    <h1 class="justify-content-center LessonNumber">1</h1>
+                                </div>
+                                <div class="d-flex justify-content-center align-items-center LessonSquare Ongoing">
+                                    <h1 class="justify-content-center LessonNumber">2</h1>
+                                </div>
+                                <div class="d-flex justify-content-center align-items-center LessonSquare">
+                                    <h1 class="justify-content-center LessonNumber">3</h1>
+                                </div>
+                                <div class="d-flex justify-content-center align-items-center LessonSquare">
+                                    <h1 class="justify-content-center LessonNumber">4</h1>
+                                </div>
+                                <div class="d-flex justify-content-center align-items-center LessonSquare">
+                                    <h1 class="justify-content-center LessonNumber">5</h1>
+                                </div>
+                                <div class="d-flex justify-content-center align-items-center LessonSquare">
+                                    <h1 class="justify-content-center LessonNumber">6</h1>
+                                </div>
+                                <div class="d-flex justify-content-center align-items-center LessonSquare">
+                                    <h1 class="justify-content-center LessonNumber">7</h1>
+                                </div>
+                                <div class="d-flex justify-content-center align-items-center LessonSquare">
+                                    <h1 class="justify-content-center LessonNumber">8</h1>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex-wrap" style="/*width: 50%;*/height: 100%;">
+                            <div class="d-flex justify-content-start align-items-center">
+                                <div class="d-flex justify-content-center align-items-center LessonSquare" style="background-color: rgb(159,177,188);"></div>
+                                <h6 style="margin-bottom: 0;color: rgb(86,86,86);">Complete</h6>
+                            </div>
+                            <div class="d-flex justify-content-start align-items-center">
+                                <div class="d-flex justify-content-center align-items-center LessonSquare" style="background-color: rgb(211,208,203);"></div>
+                                <h6 style="margin-bottom: 0;color: rgb(86,86,86);">Incomplete</h6>
+                            </div>
+                            <div class="d-flex justify-content-start align-items-center">
+                                <div class="d-flex justify-content-center align-items-center LessonSquare"></div>
+                                <h6 style="margin-bottom: 0;color: rgb(86,86,86);">Locked</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="width: 26vw;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/CircularPieChart.js"></script>
+    <script src="assets/js/ColorGenerator.js"></script>
+    <script src="assets/js/three.js"></script>
+    <script src="assets/js/GLTFLoader.js"></script>
+    <script src="assets/js/ThreeJSLoader.js"></script>
+    <script src="assets/js/HotSpot.js"></script>
+    <script src="assets/js/NavMenu.js"></script>
+</body>
+
+</html>
