@@ -512,7 +512,7 @@ a:hover {
   margin: 10px;
 }
 
-.LessonSquare.Completed {
+.LessonSquare.Complete {
   background: rgb(159, 177, 188);
 }
 
@@ -521,7 +521,7 @@ a:hover {
   width: 400px;
 }
 
-.LessonSquare.Incomplete {
+.LessonSquare.Ongoing {
   background: rgb(211, 208, 203);
 }
 
