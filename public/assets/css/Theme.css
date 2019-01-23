@@ -418,6 +418,7 @@ AssignmentCourse {
 
 .CourseFeature:hover {
   background-color: orange!important;
+  color: white!important;
 }
 
 .LastLesson {
