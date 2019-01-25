@@ -553,7 +553,7 @@ li {
   position: absolute;
   left: 20px;
   top: 20px;
-  background-color: lightgrey;
+  background-color: rgb(39, 40, 34);
 }
 
 .tab-content {
@@ -609,7 +609,6 @@ li {
 #CodeEditor, #Terminal {
   width: 48%;
   position: relative;
-  background-color: rgb(39, 40, 34);
 }
 
 #CodeOutput {
