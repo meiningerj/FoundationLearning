@@ -6,8 +6,8 @@ renderer.setSize( $('#canvas').width(), $('#canvas').height());
 document.getElementById("canvas").appendChild( renderer.domElement );
 
     var loader = new THREE.GLTFLoader();
-
-     loader.load( 'Motherboard.glb', function ( gltf ) {
+    var modelurl = document.getElementById("3DObject").value;
+     loader.load( modelurl, function ( gltf ) {
 
 	    scene.add( gltf.scene );
 
