@@ -553,7 +553,7 @@ li {
   position: absolute;
   left: 20px;
   top: 20px;
-  background-color: lightgrey;
+  background-color: rgb(39, 40, 34);
 }
 
 .tab-content {
@@ -722,4 +722,3 @@ li {
   background-color: transparent;
   color: orange;
 }
-
