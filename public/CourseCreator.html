@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>FinalYearProject</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="assets/fonts/material-icons.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=ABeeZee">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
+    <link rel="stylesheet" href="assets/css/Theme.css">
+</head>
+
+<body>
+    <div id="SideNav" class="hidden">
+        <ul style="list-style:none;margin-top:0;margin-left:0;cursor:pointer;">
+            <li id="NavLink" class="navlink-active"><i class="icon ion-ios-home-outline" id="nav-icon" style="font-size:16px;"></i>Dashboard</li>
+            <li id="NavLink"><i class="icon ion-ios-albums-outline" id="nav-icon" style="font-size:16px;"></i>Courses</li>
+            <li id="NavLink"><i class="icon ion-ios-browsers-outline" id="nav-icon" style="font-size:16px;"></i>Assignments</li>
+            <li id="NavLink"><i class="icon ion-ios-star-outline" id="nav-icon" style="font-size:14px;"></i>Certificates</li>
+        </ul>
+    </div>
+    <div style="/*margin-left:10vw;*/">
+        <div class="d-flex justify-content-end align-items-center" style="height: 5vh;position: relative;background-color: #1f253a;"><a href="#" id="NavMenu" style="position:absolute;left:1vw;"><i class="icon ion-android-menu" id="NavmenuIcon" style="color:rgb(255,255,255);"></i></a>
+            <h6 class="text-center" style="position:absolute;left:3vw;"><span style="font-weight:400;">Foundation&nbsp;</span><span>Learn</span></h6>
+            <div class="d-flex justify-content-center align-items-center" style="margin-right:1%;margin-top:0px;">
+                <h6 id="UserName">Jamie Meininger</h6><i class="fa fa-user" style="font-size: 2em;padding: 10px;color: orange;"></i></div>
+        </div>
+        <div class="d-flex">
+            <div id="Menu"></div>
+            <div>
+                <div class="d-flex align-items-center" id="TitleBanner">
+                    <h4 id="Title" style="color:rgb(91,91,91);margin-left:1vw;font-weight:200;">Dashboard</h4>
+                </div>
+                <div class="d-flex" style="flex-wrap:wrap;justify-content:center;padding-top:2vh;">
+                    <div>
+                        <div id="CourseElements" class="SectionCard" style="width: 15vw;display: flex;">
+                            <div class="form-check"><input class="form-check-input course-check" type="checkbox" id="Forum"><label class="form-check-label" for="formCheck-1"><i class="icon ion-ios-chatbubble-outline" style="font-size: 50px;cursor: pointer;"></i></label></div>
+                            <div
+                                class="form-check"><input class="form-check-input course-check" type="checkbox" id="Calendar"><label class="form-check-label" for="formCheck-1"><i class="icon ion-ios-calendar-outline" style="font-size: 50px;cursor: pointer;"></i></label></div>
+                    </div>
+                    <div class="SectionCard" style="width: 15vw;">
+                        <div class="ListHolder" style="position: relative;"><button class="btn btn-light" type="button" id="addLesson" style="position: absolute;bottom: 0;right: 0;background-color: white;border: 0;"><i class="icon ion-plus"></i></button>
+                            <ul class="nav nav-tabs nav-fill" id="LessonList"
+                                role="tablist">
+                                <li class="nav-item LessonTab"><a class="nav-link active mynav" href="#Lesson1" id="Lesson1-tab" data-toggle="tab" data-target="#Lesson1" lessonnum="1">Lesson 1</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="SectionCard" style="width: 15vw;">
+                    <div id="LessonActivitysList" class="ListHolder tab-content" style="height: 72.5vh;position: relative;">
+                        <ul class="nav nav-tabs nav-fill tab-pane fade in show active" id="Lesson1" role="tablist" lessonnum="1">
+                            <li class="nav-item ActivityTab"><a class="nav-link active mynav" href="#Lesson1Activity1" data-toggle="tab" activitynum="1">Activity 1</a></li>
+                        </ul><button class="btn btn-light" type="button" id="addActivity" style="position: absolute;bottom: 0;right: 0;background-color: white;border: 0;"><i class="icon ion-plus"></i></button></div>
+                </div>
+                <div id="LessonActivities" class="SectionCard tab-content" style="width:50vw">
+                    <div id="LessonActivity" class="ListHolder" style="height: 72.5vh; padding:30px">
+                        <form style="height: 100%;">
+                            <div class="form-group" style="display: block;">
+                                <h4 style="color: rgb(31,37,58);">Template<a href="#" data-toggle="popover" title="Popover Header" data-content="Some content inside the popover"><sup><i class="fa fa-question"></i></sup></a>
+
+    </h4>
+                                <div class="dropdown"><button class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-expanded="false" type="button" id="TemplateBtn" style="background-color: rgb(31,37,58);border: none;">Dropdown </button>
+                                    <div class="dropdown-menu"
+                                        role="menu"><a class="dropdown-item TemplateDropDown" role="presentation" href="#" value="Text-Lesson">Text Tabs</a><a class="dropdown-item TemplateDropDown" role="presentation" href="#">Code Editor</a><a class="dropdown-item TemplateDropDown"
+                                            role="presentation" href="#" value="HotSpots">Image Hot Spots</a><a class="dropdown-item TemplateDropDown" role="presentation" href="#" value="TerminalWithInstructions">Terminal</a><a class="dropdown-item TemplateDropDown"
+                                            role="presentation" href="#" value="HTMLVideoWithNotes">Video</a><a class="dropdown-item TemplateDropDown" role="presentation" href="#" value="3D">3D Model</a></div>
+                                </div><input class="form-control input" type="hidden" name="template"></div>
+                            <div id="Feather">
+                                <div id="TemplateForm" style="overflow-y: scroll;height: 100%;padding: 10px 20px;"></div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="http://js.nicedit.com/nicEdit-latest.js"></script>
+    <script src="assets/js/CircularPieChart.js"></script>
+    <script src="assets/js/ColorGenerator.js"></script>
+    <script src="assets/js/three.js"></script>
+    <script src="assets/js/GLTFLoader.js"></script>
+    <script src="assets/js/ThreeJSLoader.js"></script>
+    <script src="assets/js/HotSpot.js"></script>
+    <script src="assets/js/NavMenu.js"></script>
+    <script src="assets/js/FormBuilder.js"></script>
+    <script src="assets/js/untitled.js"></script>
+</body>
+
+</html>
