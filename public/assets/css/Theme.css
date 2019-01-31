@@ -1,4 +1,4 @@
-﻿.h6, h6 {
+.h6, h6 {
   font-family: Montserrat, sans-serif;
   margin: 0px;
   color: white;
@@ -722,3 +722,123 @@ li {
   background-color: transparent;
   color: orange;
 }
+
+#formCheck-1 {
+  display: none;
+}
+
+.form-check {
+  flex: 1;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 0;
+}
+
+.form-check-input.course-check {
+  display: none;
+}
+
+.ListHolder {
+  height: 60vh;
+  background-color: rgb(245,247,250);
+}
+
+.nav-fill .nav-item {
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+}
+
+.mynav {
+  width: 100%;
+  margin: 0;
+}
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+  border-color: transparent;
+  background-color: rgb(31,37,58);
+  color: white;
+  border-radius: 0px;
+}
+
+.nav-tabs {
+  border-bottom: none;
+}
+
+submit {
+  float: right;
+  margin-left: auto;
+}
+
+.FormHolder {
+  padding: 40px;
+  overflow-y: scroll;
+  height: 100%;
+  width: 100%;
+}
+
+.form-group {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+FormLabel {
+  color: rgb(31,37,58);
+}
+
+.h4.FormLabel {
+  margin-bottom: 0;
+}
+
+.nav-tabs .nav-item {
+  padding-left: 0px;
+}
+
+.nicEdit-main {
+  background-color: white;
+}
+
+textarea.form-control {
+  width: 100%;
+  height: 300px;
+  background-color: white;
+}
+
+.EditHotSpot {
+  padding: 3px;
+}
+
+.DeleteHotSpot {
+  padding: 3px;
+}
+
+.lg-modal {
+  width: 745px;
+  margin: auto;
+  max-width: initial;
+}
+
+.FormHolder {
+}
+
+#TemplateBtn {
+}
+
+#Feather {
+  height: 84%;
+}
+
+#Feather::after {
+  /*content: '';*/
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+
