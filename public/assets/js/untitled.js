@@ -72,7 +72,7 @@ function getActivityHTML(TemplateName){
             HTMLstring = '<input id="tab-count" type="hidden" value="1"><div class="form-group"><span class="h4 FormLabel">Activity name<a href="#" data-toggle="popover" title="Activity Name" data-content="This is the name that will show on the left navigation menu when completing the Lesson"><sup><i class="fa fa-question"></i></sup></a></span><input class="form-control" name="name" type="text"></div> <div class="form-group"><span class="h4 FormLabel">Sub-title<a href="#" data-toggle="popover" title="Sub-title" data-content="This longer text field allows for a more verbose description, shown in the title header"><sup><i class="fa fa-question"></i></sup></a></span><input class="form-control" name="longName" type="text"></div><div class="form-group"><span class="h4 FormLabel">Tab Content<a href="#" data-toggle="popover" title="Tab-Content" data-content="This is the text content that will be shown on each tab"><sup><i class="fa fa-question"></i></sup></a></span> <div style="width: 100%;"> <ul class="nav nav-tabs" id="TextAreaTabs" style="padding-left: 0;"> <li class="nav-item"><a class="nav-link active" role="tab" data-toggle="tab" href="#tab-1" id="TextTab1Link">Tab 1</a></li> <li class="nav-item" id="FinalTab" data-toggle=""><a class="nav-link AddTab" role="" data-toggle="" ><i class="fa fa-plus"></i></a></li> </ul> <div class="tab-content"> <div class="tab-pane active" role="tabpanel" id="tab-1"><textarea class="form-control" id="TabTextArea1" style="width: 100%;height: 300px;background-color: white;"></textarea></div> <div class="tab-pane" role="tabpanel" id="FinalTabPane"></div> </div> </div> </div>'
             break;
         case "Video":
-            HTMLstring = '<input id="tab-count" type="hidden" value="1"><input id="YTtab-count" type="hidden" value="1"><div class="form-group"><span class="h4 FormLabel">Activity name<a href="#" data-toggle="popover" title="Activity Name" data-content="This is the name that will show on the left navigation menu when completing the Lesson"><sup><i class="fa fa-question"></i></sup></a></span><input class="form-control" name="name" type="text"></div> <div class="form-group"><span class="h4 FormLabel">Sub-title<a href="#" data-toggle="popover" title="Sub-title" data-content="This longer text field allows for a more verbose description, shown in the title header"><sup><i class="fa fa-question"></i></sup></a></span><input class="form-control" name="longName" type="text"></div><div style="width: 100%;"> <ul class="nav nav-tabs" style="margin-bottom: 20px;"> <li class="nav-item"><a class="nav-link active" role="tab" data-toggle="tab" href="#tab-2">Custom Video File</a></li> <li class="nav-item"><a class="nav-link" role="tab" data-toggle="tab" href="#tab-1" id="YouTubeTab">YouTube Video</a></li> </ul> <div class="tab-content"> <div class="tab-pane" role="tabpanel" id="tab-1"> <div> <div class="form-group"><span class="h4 FormLabel">YouTube Embed URL<a href="#" data-toggle="popover" title="Youtube Embed URL" data-content="Upload the video you would like to play during the activity"><sup><i class="fa fa-question"></i></sup></a></span><input class="form-control" type="text"></div> <div class="form-group"><span class="h4 FormLabel">Tab Content<a href="#" data-toggle="popover" title="Tab-Content" data-content="This is the text content that will be shown on each tab"><sup><i class="fa fa-question"></i></sup></a></span> <div style="width: 100%;"> <ul class="nav nav-tabs" id="TextAreaTabs" style="padding-left: 0;"> <li class="nav-item"><a class="nav-link active" role="tab" data-toggle="tab" href="#tab-YT1" id="TextTab1Link">Tab 1</a></li> <li class="nav-item" id="FinalTab" data-toggle=""><a class="nav-link AddYTTab" role="" data-toggle="" href="" ><i class="fa fa-plus"></i></a></li> </ul> <div class="tab-content"> <div class="tab-pane active" role="tabpanel" id="tab-YT1"><textarea class="form-control" id="TabTextAreaY1" style="width: 100%;height: 300px;background-color: white;"></textarea></div> <div class="tab-pane" role="tabpanel" id="FinalTabPane"></div> </div> </div> </div> </div> </div> <div class="tab-pane active" role="tabpanel" id="tab-2"> <div> <div class="form-group"><span class="h4 FormLabel">Video File<a href="#" data-toggle="popover" title="Video File" data-content="Upload the video you would like to play during the activity"><sup><i class="fa fa-question"></i></sup></a></span><input type="file" style="width: 100%;margin-top: 10px;"></div> <div class="form-group"><span class="h4 FormLabel">Tab Content<a href="#" data-toggle="popover" title="Tab-Content" data-content="This is the text content that will be shown on each tab"><sup><i class="fa fa-question"></i></sup></a></span> <div style="width: 100%;"> <ul class="nav nav-tabs" id="TextAreaTabs" style="padding-left: 0;"> <li class="nav-item"><a class="nav-link active" role="tab" data-toggle="tab" href="#tab-v1" id="TextTab1Link">Tab 1</a></li> <li class="nav-item" id="FinalTab" data-toggle=""><a class="nav-link AddVideoTab" role="" data-toggle="" href="" ><i class="fa fa-plus"></i></a></li> </ul> <div class="tab-content"> <div class="tab-pane active" role="tabpanel" id="tab-v1"> <div class="d-flex align-items-center" style="margin-bottom: 10px;"> <p style="margin: 0;margin-right: 10px;">Time trigger for note</p><input class="form-control form-control-sm" type="time" value="00:00" style="width: 94px;"></div><textarea class="form-control" id="TabTextArea1" style="width: 100%;height: 300px;background-color: white;"></textarea></div> <div class="tab-pane" role="tabpanel" id="FinalTabPane"></div> </div> </div> </div> </div> </div> </div> </div>'
+            HTMLstring = '<input id="tab-count" type="hidden" value="1"><input id="YTtab-count" type="hidden" value="1"><div class="form-group"><span class="h4 FormLabel">Activity name<a href="#" data-toggle="popover" title="Activity Name" data-content="This is the name that will show on the left navigation menu when completing the Lesson"><sup><i class="fa fa-question"></i></sup></a></span><input class="form-control" name="name" type="text"></div> <div class="form-group"><span class="h4 FormLabel">Sub-title<a href="#" data-toggle="popover" title="Sub-title" data-content="This longer text field allows for a more verbose description, shown in the title header"><sup><i class="fa fa-question"></i></sup></a></span><input class="form-control" name="longName" type="text"></div><div style="width: 100%;"> <ul class="nav nav-tabs" style="margin-bottom: 20px;"> <li class="nav-item"><a class="nav-link active" role="tab" data-toggle="tab" href="#tab-2">Custom Video File</a></li> <li class="nav-item"><a class="nav-link" role="tab" data-toggle="tab" href="#tab-1" id="YouTubeTab">YouTube Video</a></li> </ul> <div class="tab-content"> <div class="tab-pane" role="tabpanel" id="tab-1"> <div> <div class="form-group"><span class="h4 FormLabel">YouTube Embed URL<a href="#" data-toggle="popover" title="Youtube Embed URL" data-content="Upload the video you would like to play during the activity"><sup><i class="fa fa-question"></i></sup></a></span><input name="YTURL" class="form-control" type="text"></div> <div class="form-group"><span class="h4 FormLabel">Tab Content<a href="#" data-toggle="popover" title="Tab-Content" data-content="This is the text content that will be shown on each tab"><sup><i class="fa fa-question"></i></sup></a></span> <div style="width: 100%;"> <ul class="nav nav-tabs" id="TextAreaTabs" style="padding-left: 0;"> <li class="nav-item"><a class="nav-link active YTtab" role="tab" data-toggle="tab" href="#tab-YT1" id="TextTab1Link">Tab 1</a></li> <li class="nav-item" id="FinalTab" data-toggle=""><a class="nav-link AddYTTab" role="" data-toggle="" href="" ><i class="fa fa-plus"></i></a></li> </ul> <div class="tab-content"> <div class="tab-pane active" role="tabpanel" id="tab-YT1"><textarea class="form-control" id="TabTextAreaY1" style="width: 100%;height: 300px;background-color: white;"></textarea></div> <div class="tab-pane" role="tabpanel" id="FinalTabPane"></div> </div> </div> </div> </div> </div> <div class="tab-pane active" role="tabpanel" id="tab-2"> <div> <div class="form-group"><span class="h4 FormLabel">Video File<a href="#" data-toggle="popover" title="Video File" data-content="Upload the video you would like to play during the activity"><sup><i class="fa fa-question"></i></sup></a></span><input type="file" style="width: 100%;margin-top: 10px;"></div> <div class="form-group"><span class="h4 FormLabel">Tab Content<a href="#" data-toggle="popover" title="Tab-Content" data-content="This is the text content that will be shown on each tab"><sup><i class="fa fa-question"></i></sup></a></span> <div style="width: 100%;"> <ul class="nav nav-tabs" id="TextAreaTabs" style="padding-left: 0;"> <li class="nav-item"><a class="nav-link active" role="tab" data-toggle="tab" href="#tab-v1" id="TextTab1Link">Tab 1</a></li> <li class="nav-item" id="FinalTab" data-toggle=""><a class="nav-link AddVideoTab" role="" data-toggle="" href="" ><i class="fa fa-plus"></i></a></li> </ul> <div class="tab-content"> <div class="tab-pane active Vtab" role="tabpanel" id="tab-v1"> <div class="d-flex align-items-center" style="margin-bottom: 10px;"> <p style="margin: 0;margin-right: 10px;">Time trigger for note</p><input class="form-control form-control-sm" name="vidTime1" type="time" value="00:00" style="width: 94px;"></div><textarea class="form-control" id="TabTextArea1" style="width: 100%;height: 300px;background-color: white;"></textarea></div> <div class="tab-pane" role="tabpanel" id="FinalTabPane"></div> </div> </div> </div> </div> </div> </div> </div>'
             break;
         case "Dropdown":
             ""
@@ -102,7 +102,7 @@ function addVideoTab(e){
     $('<li class="nav-item"><a class="nav-link" role="tab" data-toggle="tab" href="#tab-v'+tabCount+'" id="TextTab'+tabCount+'Link">Tab '+tabCount+'</a></li>').insertBefore($(obj))
 
     var obj=$(this).parent().parent().siblings('.tab-content')
-    $( '<div class="tab-pane" role="tabpanel" id="tab-v'+tabCount+'"><div class="d-flex align-items-center" style="margin-bottom: 10px;"> <p style="margin: 0;margin-right: 10px;">Time trigger for note</p><input class="form-control form-control-sm" type="time" value="00:00" style="width: 94px;" name="time-'+tabCount+'"></div><textarea class="form-control" id="TabTextArea'+tabCount+'"></textarea></div>').appendTo($(obj))
+    $( '<div class="tab-pane Vtab" role="tabpanel" id="tab-v'+tabCount+'"><div class="d-flex align-items-center" style="margin-bottom: 10px;"> <p style="margin: 0;margin-right: 10px;">Time trigger for note</p><input class="form-control form-control-sm"  name="vidTime'+tabCount+'" type="time" value="00:00" style="width: 94px;" name="time-'+tabCount+'"></div><textarea class="form-control" id="TabTextArea'+tabCount+'"></textarea></div>').appendTo($(obj))
 
     $('#TextTab'+tabCount+'Link').tab('show');
     new nicEditor().panelInstance('TabTextArea'+tabCount);
@@ -116,7 +116,7 @@ function addYTVideoTab(e){
     $('<li class="nav-item"><a class="nav-link" role="tab" data-toggle="tab" href="#tab-YT'+tabCount+'" id="TextTabYT'+tabCount+'Link">Tab '+tabCount+'</a></li>').insertBefore($(obj))
 
     var obj=$(this).parent().parent().siblings('.tab-content')
-    $( '<div class="tab-pane" role="tabpanel" id="tab-YT'+tabCount+'"><textarea class="form-control" id="TabTextAreaY'+tabCount+'"></textarea></div>').appendTo($(obj))
+    $( '<div class="tab-pane YTtab" role="tabpanel" id="tab-YT'+tabCount+'"><textarea class="form-control" id="TabTextAreaY'+tabCount+'"></textarea></div>').appendTo($(obj))
 
     $('#TextTabYT'+tabCount+'Link').tab('show');
     new nicEditor().panelInstance('TabTextAreaY'+tabCount);
@@ -200,14 +200,15 @@ function UpdateListeners(){
         $("#LessonActivities > div").removeClass("active");
         $("#LessonActivities > div").removeClass("show");
         CurrentActivity = parseInt($('#LessonActivitysList #Lesson'+CurrentLesson+' li .active').attr("activitynum"))
-        setFormHTML(CurrentLesson, CurrentActivity)
+        setFormHTML(CurrentLesson, CurrentActivity);
+        LoadContent(CurrentLesson, CurrentActivity);
     });
     //Re-apply handlers to Activitys
     $('#LessonActivitysList ul li a[data-toggle="tab"]').on('shown.bs.tab', function (e){
         SaveContent(CurrentLesson, CurrentActivity);
         CurrentActivity = parseInt($(e.target).attr("activitynum"))
-
         setFormHTML(CurrentLesson, CurrentActivity)
+        LoadContent(CurrentLesson, CurrentActivity);
     });
 
     $('#YouTubeTab').on('shown.bs.tab', function (e) {
@@ -286,6 +287,14 @@ function SaveContent(){
             case "Image Hot Spots":
                 break;
             case "Terminal":
+                var notes = $(".nicEdit-main");
+                server = $("#ServerDropDownBtn").html()
+                for(var x = 0; x < notes.length; x++){
+                    course[CurrentLesson-1][CurrentActivity-1]["variables"]['instructions']['tab-'+(x+1)+''] = $(notes[x]).html();
+                }
+                if(server != "Server&nbsp;"){
+                course[CurrentLesson-1][CurrentActivity-1]["variables"]['server'] = server
+                }
                 break;
             case "Code Editor":
                 language = $("#LanguageDropdownBtn").html()
@@ -309,11 +318,110 @@ function SaveContent(){
                 }
                 break;
             case "Video":
+                if ( $( "#YouTubeTab" ).hasClass( "active" ) ){
+                  course[CurrentLesson-1][CurrentActivity-1]["variables"]['type'] = "YT"
+                  course[CurrentLesson-1][CurrentActivity-1]["variables"]['videoName'] = $("input[name='YTURL']").value()
+                  var notes = $( ".YTtab" ).find( ".nicEdit-main" )
+                  for(var x = 0; x < notes.length; x++){
+                    course[CurrentLesson-1][CurrentActivity-1]["variables"]['comments']['tab-'+(x+1)+''] = $(notes[x]).html();
+                  }
+                }else{
+                  var notes = $( ".Vtab" ).find( ".nicEdit-main" )
+                  for(var x = 0; x < notes.length; x++){
+                    course[CurrentLesson-1][CurrentActivity-1]["variables"]['videoLinks'].push($("input[name='vidTime"+x+"']").value())
+                    course[CurrentLesson-1][CurrentActivity-1]["variables"]['comments']['tab-'+(x+1)+''] = $(notes[x]).html();
+                  }
+
+                }
                 break;
             case "Dropdown":
                 ""
                 break;
         }
+
+    }
+    console.log(course)
+}
+function LoadContent(){
+
+    if(course[CurrentLesson-1][CurrentActivity-1] != "undefined"){
+      $('[name="longName"]').val() = course[CurrentLesson-1][CurrentActivity-1]["longName"]
+      $('[name="name"]').val() = course[CurrentLesson-1][CurrentActivity-1]["name"]
+        switch(course[CurrentLesson-1][CurrentActivity-1]["template"]){
+            case "3D Model":
+                var comments = Object.keys(course[CurrentLesson-1][CurrentActivity-1]["variables"]['comments']).length;
+                for(var i = 1; i < comments; i++){
+                  addTab()
+                }
+                var notes = $(".nicEdit-main");
+                for(var x = 0; x < notes.length; x++){
+                  $(notes[x]).html() = course[CurrentLesson-1][CurrentActivity-1]["variables"]['comments']['tab-'+(x+1)+''];
+                  $('#NotedObjectName'+(x+1)).val(course[CurrentLesson-1][CurrentActivity-1]["variables"]['objectLinks'][x]['objectName'])
+                }
+                break;
+            case "Image Hot Spots":
+                    break;
+            case "Terminal":
+                    var comments = Object.keys(course[CurrentLesson-1][CurrentActivity-1]["variables"]['instructions']).length;
+                    for(var i = 1; i < comments; i++){
+                      addTab()
+                    }
+                    var notes = $(".nicEdit-main");
+                    server = $("#ServerDropDownBtn").html()
+                    for(var x = 0; x < notes.length; x++){
+                       $(notes[x]).html() = course[CurrentLesson-1][CurrentActivity-1]["variables"]['instructions']['tab-'+(x+1)+''];
+                    }
+                    if('server' in course[CurrentLesson-1][CurrentActivity-1]["variables"]){
+                      $("#ServerDropDownBtn").html(course[CurrentLesson-1][CurrentActivity-1]["variables"]['server'])
+                    }
+                    break;
+            case "Code Editor":
+                    if('language' in course[CurrentLesson-1][CurrentActivity-1]["variables"]['language']){
+                    $("#ServerDropDownBtn").html(course[CurrentLesson-1][CurrentActivity-1]["variables"]['language'])
+                    }
+                    if('server' in course[CurrentLesson-1][CurrentActivity-1]["variables"]['language']){
+                    $("#LanguageDropdownBtn").html(course[CurrentLesson-1][CurrentActivity-1]["variables"]['server'])
+                    }
+                    break;
+            case "Text Tabs":
+                    var comments = Object.keys(course[CurrentLesson-1][CurrentActivity-1]["variables"]).length;
+                    for(var i = 1; i < comments; i++){
+                      addTab();
+                    }
+                    var notes = $(".nicEdit-main");
+                    for(var x = 0; x < notes.length; x++){
+                        $(notes[x]).html(course[CurrentLesson-1][CurrentActivity-1]["variables"]['tab-'+(x+1)+'']);
+                    }
+                    break;
+            case "Video":
+                if(course[CurrentLesson-1][CurrentActivity-1]["variables"]['type'] == "YT"){
+                      $("input[name='YTURL']").value(course[CurrentLesson-1][CurrentActivity-1]["variables"]['videoName']);
+                      var comments = Object.keys(course[CurrentLesson-1][CurrentActivity-1]["variables"]['comments']).length;
+                      for(var i = 1; i < comments; i++){
+                        addYTVideoTab();
+                      }
+                      var notes = $( ".YTtab" ).find( ".nicEdit-main" )
+                      for(var x = 0; x < notes.length; x++){
+                        $(notes[x]).html(course[CurrentLesson-1][CurrentActivity-1]["variables"]['comments']['tab-'+(x+1)+'']);
+                      }
+                      $( "#YouTubeTab" ).tab('show')
+                }else{
+                      var comments = Object.keys(course[CurrentLesson-1][CurrentActivity-1]["variables"]['comments']).length;
+                      for(var i = 1; i < comments; i++){
+                        addVideoTab();
+                      }
+                      var notes = $( ".Vtab" ).find( ".nicEdit-main" )
+                      for(var x = 0; x < notes.length; x++){
+                        $("input[name='vidTime"+x+"']").value(course[CurrentLesson-1][CurrentActivity-1]["variables"]['videoLinks'][x])
+                        $(notes[x]).html(course[CurrentLesson-1][CurrentActivity-1]["variables"]['comments']['tab-'+(x+1)+''] );
+                      }
+                    }
+                  }
+                    break;
+            case "Dropdown":
+                    ""
+                    break;
+            }
 
     }
     console.log(course)
