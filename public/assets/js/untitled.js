@@ -345,7 +345,7 @@ function SaveContent(Lesson, Activity){
                     course[Lesson-1][Activity-1]["variables"]['comments']= {}
                   course[Lesson-1][Activity-1]["variables"]['type'] = "YT"
                   course[Lesson-1][Activity-1]["variables"]['videoName'] = $("input[name='YTURL']").val()
-                  var notes = $( ".YTtab" ).find( ".nicEdit-main" )
+                  var notes = $( "#tab-1" ).find( ".nicEdit-main" )
                   for(var x = 0; x < notes.length; x++){
                     course[Lesson-1][Activity-1]["variables"]['comments']['tab-'+(x+1)+''] = $(notes[x]).html();
                   }
@@ -354,7 +354,7 @@ function SaveContent(Lesson, Activity){
                   course[Lesson-1][Activity-1]["variables"]['videoLinks'] = []
                   course[Lesson-1][Activity-1]["variables"]['comments']= {}
                   for(var x = 0; x < notes.length; x++){
-                    course[Lesson-1][Activity-1]["variables"]['videoLinks'].push($("input[name='vidTime"+x+"']").val())
+                    course[Lesson-1][Activity-1]["variables"]['videoLinks'].push($("input[name='vidTime"+(x+1)+"']").val())
                     course[Lesson-1][Activity-1]["variables"]['comments']['tab-'+(x+1)+''] = $(notes[x]).html();
                   }
 
@@ -443,24 +443,25 @@ function LoadContent(Lesson, Activity){
                     break;
             case "Video":
                 if(course[Lesson-1][Activity-1]["variables"]['type'] == "YT"){
+                    $( "#YouTubeTab" ).tab('show');
                       $("input[name='YTURL']").val(course[Lesson-1][Activity-1]["variables"]['videoName']);
                       var comments = Object.keys(course[Lesson-1][Activity-1]["variables"]['comments']).length;
                       for(var i = 1; i < comments; i++){
-                        addYTVideoTab();
+                        $('.AddYTTab').click();
                       }
-                      var notes = $( ".YTtab" ).find( ".nicEdit-main" )
+                      var notes = $( "#tab-1" ).find( ".nicEdit-main" )
                       for(var x = 0; x < notes.length; x++){
                         $(notes[x]).html(course[Lesson-1][Activity-1]["variables"]['comments']['tab-'+(x+1)+'']);
                       }
-                      $( "#YouTubeTab" ).tab('show')
+                      $( "#YouTubeTab" ).tab('show');
                 }else{
                       var comments = Object.keys(course[Lesson-1][Activity-1]["variables"]['comments']).length;
                       for(var i = 1; i < comments; i++){
-                        addVideoTab();
+                        $('.AddVideoTab').click();
                       }
                       var notes = $( ".Vtab" ).find( ".nicEdit-main" )
                       for(var x = 0; x < notes.length; x++){
-                        $("input[name='vidTime"+x+"']").val(course[Lesson-1][Activity-1]["variables"]['videoLinks'][x])
+                        $("input[name='vidTime"+(x+1)+"']").val(course[Lesson-1][Activity-1]["variables"]['videoLinks'][x])
                         $(notes[x]).html(course[Lesson-1][Activity-1]["variables"]['comments']['tab-'+(x+1)+''] );
                       }
                     }

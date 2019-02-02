@@ -558,7 +558,7 @@ li {
 
 .tab-content {
   height: 100%;
-  overflow-y: scroll;
+  /* overflow-y: scroll; */
 }
 
 #LectureNotes, #CodingInstructions {
@@ -822,23 +822,3 @@ textarea.form-control {
   margin: auto;
   max-width: initial;
 }
-
-.FormHolder {
-}
-
-#TemplateBtn {
-}
-
-#Feather {
-  height: 84%;
-}
-
-#Feather::after {
-  /*content: '';*/
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  top: 0;
-}
-
