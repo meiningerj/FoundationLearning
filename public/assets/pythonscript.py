@@ -1,2 +1,2 @@
 import sys
-print("hello")
+print "Got arguments: ", sys.argv
