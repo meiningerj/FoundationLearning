@@ -17,6 +17,10 @@ function LoadActivity(ActivityNum,tag){
              $( "#LessonContainer" ).html( data.activityHTML );
              $('#Title').html(data.longName)
              $( "#LessonContainer" ).animate({opacity: 1},500)
+              $( "#RunCode" ).click(function() {
+                    runCode();
+                    return false;
+              });
          })
      });
      var BottomList = $('#BottomMenu div')
@@ -37,4 +41,15 @@ function bottomMenuLink(){
 
 
     return false;
+}
+
+function runCode(){
+    var editor = ace.edit("AceEditor");
+    var code = editor.getValue();
+    $.get( "https://foundationlearning.eu-gb.mybluemix.net/python", { text: code} , function(data, status){
+
+           var editor = ace.edit("AceEditorOutput");
+           editor.setValue(data.test);
+
+       });
 }
