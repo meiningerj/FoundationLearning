@@ -486,7 +486,7 @@ a:hover {
   /*border-top: none!important;*/
 }
 
-.MenuItem.InactiveLink {
+.InactiveLink {
   cursor: not-allowed!important;
   opacity: 0.5;
 }
@@ -821,4 +821,10 @@ textarea.form-control {
   width: 745px;
   margin: auto;
   max-width: initial;
+}
+.show{
+  opacity: 1;
+}
+.hide{
+  opacity:0;
 }
