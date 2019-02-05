@@ -13,7 +13,7 @@ animate()
 
 function init(){
   camera = new THREE.PerspectiveCamera( 45, window.innerWidth / window.innerHeight, 0.25, 20 );
-  camera.position.set( - 2.8, 0.9, 2.7 );
+  camera.position.set( - 2.8, 0, 6 );
 
   controls = new THREE.OrbitControls(camera);
   controls.target.set( 0, 0, 0);
