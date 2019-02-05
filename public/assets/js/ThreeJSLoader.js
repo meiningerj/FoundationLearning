@@ -2,13 +2,14 @@ var container, stats, controls;
 var camera, scene, renderer, light, raycaster;
 var theta = 0
 var radius = 100
-var mouse = new THREE.Vector2(), INTERSECTED;
+var mouse = new THREE.Vector2(1000000,1000000), INTERSECTED;
 var loaded = false;
 var HighlightMaterial;
+var Mesh =[];
 var cube;
-init();
-animate();
-
+var oldmaterial = [];
+init()
+animate()
 
 function init(){
   camera = new THREE.PerspectiveCamera( 45, window.innerWidth / window.innerHeight, 0.25, 20 );
@@ -21,25 +22,36 @@ function init(){
 
 
   scene = new THREE.Scene();
+
   light = new THREE.HemisphereLight( 0xbbbbff, 0x444422 );
   light.position.set( 0, 5, 0 );
   scene.add( light );
 
-  var light = new THREE.PointLight( 0xffffff, 1, 100 );
-  light.position.set( 0, 1.6, 0 );
+  var light = new THREE.DirectionalLight( 0xffffff, 1 );
+  light.position.set(5,10,7.5)
   scene.add( light );
-
 
   // model
   var loader = new THREE.GLTFLoader()
-  var modelurl = document.getElementById("3DObject").value;
+  var modelurl = "https://foundationlearning.eu-gb.mybluemix.net/assets/Motherboard.glb" //document.getElementById("3DObject").value;
   loader.load( modelurl, function ( gltf ) {
 
 
     scene.add( gltf.scene );
     loaded = true;
-    document.getElementById('loading').style.display = "none";
-    console.log( scene.children[2].children)
+    //document.getElementById('loading').style.display = "none";
+
+    for(var x = 0; x < scene.children[2].children.length; x++){
+      if(scene.children[2].children[x].children.length != 0){
+        for(var i = 0; i < scene.children[2].children[x].children.length; i++){
+          Mesh.push(scene.children[2].children[x].children[i])
+        }
+      }else{
+        Mesh.push(scene.children[2].children[x])
+      }
+    }
+    console.log( Mesh)
+
 
   }, undefined , function ( e ) {
 
@@ -51,10 +63,10 @@ function init(){
   raycaster = new THREE.Raycaster()
 
   renderer = new THREE.WebGLRenderer();
-  renderer.setSize( $('#canvas').width(), $('#canvas').height());
+  renderer.setSize( window.innerWidth, window.innerHeight);
   renderer.setClearColor (0xf5f7fa, 1);
 
-  document.getElementById("canvas").appendChild( renderer.domElement );
+  document.body.appendChild( renderer.domElement );
   document.addEventListener( 'mousemove', onDocumentMouseMove, false );
   console.log(scene.children);
 }
@@ -65,32 +77,63 @@ function init(){
 function onDocumentMouseMove( event ) {
 
   event.preventDefault();
-  mouse.x = ( event.clientX  / window.innerWidth ) * 2 - 1;
-  mouse.y = - ( event.clientY / window.innerHeight ) * 2 -1;
-
+  mouse.x = ( event.clientX / window.innerWidth ) * 2 - 1;
+	mouse.y = - ( event.clientY / window.innerHeight ) * 2 + 1;
   }
 
 function render() {
-if( loaded == true)	{
+  if( loaded == true)	{
   // find intersections
-  raycaster.setFromCamera( mouse, camera );
-  var intersects = raycaster.intersectObjects( scene.children[2].children );
-  if ( intersects.length > 0 ) {
-    if ( INTERSECTED != intersects[ 0 ].object ) {
-      if ( INTERSECTED ) INTERSECTED.material.emissive.setHex( INTERSECTED.currentHex );
-      INTERSECTED = intersects[ 0 ].object;
-      INTERSECTED.currentHex = INTERSECTED.material.emissive.getHex();
-      HighlightMaterial = INTERSECTED.material.clone();
-      HighlightMaterial.emissive.setHex( 0xff0000 );
-      INTERSECTED.material = HighlightMaterial;
+    raycaster.setFromCamera( mouse, camera );
+    var intersects = raycaster.intersectObjects( Mesh );
+    if ( intersects.length > 0 ) {
+      if ( INTERSECTED != intersects[ 0 ].object ) {
+        if ( INTERSECTED ){
+
+           if(INTERSECTED.parent.name != "Scene"){
+             for(var y = 0; y < INTERSECTED.parent.children.length; y++){
+                  INTERSECTED.parent.children[y].material = oldmaterial[y];
+              }
+           }else{
+             INTERSECTED.material.color.setHex( INTERSECTED.currentHex );
+           }
+        }
+
+        INTERSECTED = intersects[ 0 ].object;
+        INTERSECTED.currentHex = INTERSECTED.material.color.getHex();
+        HighlightMaterial = INTERSECTED.material.clone();
+        //HighlightMaterial.emissive.setHex(  0xff8c8c);
+        HighlightMaterial.color.setHex(  0xff8c8c  );
+
+        if(INTERSECTED.parent.name != "Scene"){
+            oldmaterial = []
+           for(var y = 0; y < INTERSECTED.parent.children.length; y++){
+            oldmaterial.push(INTERSECTED.parent.children[y].material)
+
+            INTERSECTED.parent.children[y].material = HighlightMaterial;
+            console.log(INTERSECTED.parent.name)
+         }
+        }else{
+          INTERSECTED.currentHex = INTERSECTED.material.color.getHex();
+          INTERSECTED.material = HighlightMaterial;
+          console.log(INTERSECTED.name)
+        }
+      }
+    } else {
+      if ( INTERSECTED ){
+        INTERSECTED.material.color.setHex( INTERSECTED.currentHex );
+        if(INTERSECTED.parent.name != "Scene"){
+        for(var y = 0; y < INTERSECTED.parent.children.length; y++){
+            INTERSECTED.parent.children[y].material = oldmaterial[y];
+        }
+        }
+      }
+      INTERSECTED = null;
     }
-  } else {
-    if ( INTERSECTED ) INTERSECTED.material.emissive.setHex( INTERSECTED.currentHex );
-    INTERSECTED = null;
+
   }
-}
   renderer.render( scene, camera );
-  }
+ }
 
 
 function animate() {
