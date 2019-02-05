@@ -3,7 +3,7 @@ var camera, scene, renderer, light, raycaster;
 var theta = 0
 var radius = 100
 var mouse = new THREE.Vector2(), INTERSECTED;
-let loaded = false;
+var loaded = false;
 var HighlightMaterial;
 var cube;
 init();
