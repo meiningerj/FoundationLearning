@@ -110,11 +110,13 @@ function render() {
 
             INTERSECTED.parent.children[y].material = HighlightMaterial;
             $( "#selectedObj" ).val(INTERSECTED.parent.name)
+            $( "#selectedObj" ).trigger('change')
          }
         }else{
           INTERSECTED.currentHex = INTERSECTED.material.color.getHex();
           INTERSECTED.material = HighlightMaterial;
           $( "#selectedObj" ).val(INTERSECTED.name)
+          $( "#selectedObj" ).trigger('change')
         }
       }
     } else {
@@ -140,10 +142,3 @@ function animate() {
 
   render();
   }
-
-$( "#selectedObj" ).change(function() {
-    if( $( "#selectedObj" ).val() in objectLinks){
-      var selectedTab = objectLinks[$( "#selectedObj" ).val()]['tabNum']
-      $('#tab-'+selectedTab).tabs('show')
-    }
-  });
