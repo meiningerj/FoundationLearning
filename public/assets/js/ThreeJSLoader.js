@@ -50,7 +50,6 @@ function init(){
         Mesh.push(scene.children[2].children[x])
       }
     }
-    console.log( Mesh)
 
 
   }, undefined , function ( e ) {
@@ -68,7 +67,6 @@ function init(){
 
   document.body.appendChild( renderer.domElement );
   document.addEventListener( 'mousemove', onDocumentMouseMove, false );
-  console.log(scene.children);
 }
 
 
@@ -111,12 +109,12 @@ function render() {
             oldmaterial.push(INTERSECTED.parent.children[y].material)
 
             INTERSECTED.parent.children[y].material = HighlightMaterial;
-            console.log(INTERSECTED.parent.name)
+            $( "#selectedObj" ).val(INTERSECTED.parent.name)
          }
         }else{
           INTERSECTED.currentHex = INTERSECTED.material.color.getHex();
           INTERSECTED.material = HighlightMaterial;
-          console.log(INTERSECTED.name)
+          $( "#selectedObj" ).val(INTERSECTED.name)
         }
       }
     } else {
@@ -142,3 +140,10 @@ function animate() {
 
   render();
   }
+
+$( "#selectedObj" ).change(function() {
+    if( $( "#selectedObj" ).val() in objectLinks){
+      var selectedTab = objectLinks[$( "#selectedObj" ).val()]['tabNum']
+      $('#tab-'+selectedTab).tabs('show')
+    }
+  });

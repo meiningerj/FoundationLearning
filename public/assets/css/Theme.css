@@ -543,7 +543,7 @@ li {
 #VideoNotes {
   width: 48%;
   height: 49%;
-  margin-top: -40vh;
+  margin-top: -35vh;
   position: relative;
 }
 
@@ -827,4 +827,19 @@ textarea.form-control {
 }
 .hide{
   opacity:0;
+}
+.Question {
+    padding: 20px;
+    padding-bottom: 0px;
+}iframe {
+    overflow: hidden;
+}
+
+.QuestionText {
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+input.UserAnswer {
+    width: 80%;
 }
