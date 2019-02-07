@@ -2,7 +2,7 @@ applications:
   - path: .
     name: FoundationLearning
     environment_json: {}
-    memory: 768M
+    memory: 1024M
     instances: 1
     disk_quota: 1024M
     services:
