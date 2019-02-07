@@ -109,14 +109,12 @@ function render() {
             oldmaterial.push(INTERSECTED.parent.children[y].material)
 
             INTERSECTED.parent.children[y].material = HighlightMaterial;
-            $( "#selectedObj" ).val(INTERSECTED.parent.name)
-            $( "#selectedObj" ).trigger('change')
+            parent.showTab(INTERSECTED.parent.name)
          }
         }else{
           INTERSECTED.currentHex = INTERSECTED.material.color.getHex();
           INTERSECTED.material = HighlightMaterial;
-          $( "#selectedObj" ).val(INTERSECTED.name)
-          $( "#selectedObj" ).trigger('change')
+          parent.showTab(INTERSECTED.name)
         }
       }
     } else {
