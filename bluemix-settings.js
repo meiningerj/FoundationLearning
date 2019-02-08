@@ -32,7 +32,7 @@ var settings = module.exports = {
     uiPort: process.env.PORT || 1880,
     mqttReconnectTime: 15000,
     debugMaxLength: 1000,
-    httpNodeCors: {origin: "*",methods: "GET,PUT,POST,DELETE"},
+    httpNodeCors: {origin: "*",methods: "GET,PUT,POST,DELETE", credentials: true},
     userDir: userDir,
 
     flowFile: "flows.json",
