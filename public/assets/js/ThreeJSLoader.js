@@ -39,7 +39,7 @@ function init(){
 
     scene.add( gltf.scene );
     loaded = true;
-    //document.getElementById('loading').style.display = "none";
+    document.getElementById('Loading').style.display = "none";
 
     for(var x = 0; x < scene.children[2].children.length; x++){
       if(scene.children[2].children[x].children.length != 0){
