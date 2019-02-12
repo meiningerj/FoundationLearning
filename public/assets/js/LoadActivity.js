@@ -104,12 +104,12 @@ function getClickPosition(e) {
     var yPosition = e.clientY-rect.top + 'px';
     document.getElementById('ImageHotspot').style.left = xPosition;
     document.getElementById('ImageHotspot').style.top = yPosition;
-    $("#x").val(e.clientX-rect.left)
-    $("#y").val(e.clientY-rect.top)
 }
 function checkAnswer(){
     var correctx = $("#x").val()
     var correcty = $("#y").val()
+    console.log(correctx)
+    console.log(document.getElementById('ImageHotspot').style.left))
     if( (Math.abs(correctx - document.getElementById('ImageHotspot').style.left)<40) && (Math.abs(correcty - document.getElementById('ImageHotspot').style.top)<40)){
         alert("That is correct");
         score.push(1)
