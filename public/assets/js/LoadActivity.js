@@ -104,6 +104,8 @@ function getClickPosition(e) {
     var yPosition = e.clientY-rect.top + 'px';
     document.getElementById('ImageHotspot').style.left = xPosition;
     document.getElementById('ImageHotspot').style.top = yPosition;
+    $("#x").val(e.clientX-rect.left)
+    $("#y").val(e.clientY-rect.top)
 }
 function checkAnswer(){
     var correctx = $("#x").val()
