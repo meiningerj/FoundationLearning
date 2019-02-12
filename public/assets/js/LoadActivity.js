@@ -63,6 +63,9 @@ function nextActivity(){
         $.post("https://foundationlearning.eu-gb.mybluemix.net/updatescore", {_id: window.location.href.split("/")[3].split("-")[1], score : scoreTotalnum, lesson : window.location.href.split("/")[4].split("-")[1]})
         $('#learnersScore').html(scoreTotal)
         $('#exampleModalCenter').modal('show')
+        $('#continue').click(function(){
+             window.location.href='https://foundationlearning.eu-gb.mybluemix.net/course-EC101';
+          });
     }else{
     LoadActivity(parseInt(currentActivity) + 1)
     }
