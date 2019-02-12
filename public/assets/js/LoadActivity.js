@@ -109,7 +109,7 @@ function checkAnswer(){
     var correctx = $("#x").val()
     var correcty = $("#y").val()
     console.log(correctx)
-    console.log(document.getElementById('ImageHotspot').style.left))
+    console.log(document.getElementById('ImageHotspot').style.left)
     if( (Math.abs(correctx - document.getElementById('ImageHotspot').style.left)<40) && (Math.abs(correcty - document.getElementById('ImageHotspot').style.top)<40)){
         alert("That is correct");
         score.push(1)
