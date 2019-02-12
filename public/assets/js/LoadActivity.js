@@ -59,7 +59,7 @@ function nextActivity(){
             if(score[i] == 1) count++;
         }
         scoreTotalnum = (count/score.length * 100)
-        scoreTotal = (count/score.length * 100) + '%'
+        scoreTotal = Math.round((count/score.length * 100)) + '%'
         $.post("https://foundationlearning.eu-gb.mybluemix.net/updatescore", {_id: window.location.href.split("/")[3].split("-")[1], score : scoreTotalnum, lesson : window.location.href.split("/")[4].split("-")[1]})
         $('#learnersScore').html(scoreTotal)
         $('#exampleModalCenter').modal('show')
