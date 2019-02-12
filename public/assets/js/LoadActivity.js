@@ -108,9 +108,7 @@ function getClickPosition(e) {
 function checkAnswer(){
     var correctx = $("#x").val()
     var correcty = $("#y").val()
-    console.log(correctx)
-    console.log(document.getElementById('ImageHotspot').style.left)
-    if( (Math.abs(correctx - document.getElementById('ImageHotspot').style.left)<40) && (Math.abs(correcty - document.getElementById('ImageHotspot').style.top)<40)){
+    if( (Math.abs(correctx - parseInt((document.getElementById('ImageHotspot').style.left).split(".")[0]))<20) && (Math.abs(correcty -  parseInt((document.getElementById('ImageHotspot').style.top).split(".")[0]))<20)){
         alert("That is correct");
         score.push(1)
 
