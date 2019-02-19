@@ -13,7 +13,7 @@ function LoadActivity(ActivityNum,tag){
     //$( "#LessonContainer" ).animate({}, 2000);
     }
 
-    $.get("https://foundationlearning.eu-gb.mybluemix.net/course-EC101/Lesson-1/"+ActivityNum, function(data, status){
+    $.get(window.location.href+"/"+ActivityNum, function(data, status){
          $( "#LessonContainer" ).animate({opacity: 0}, 500,function(){
              $( "#LessonContainer" ).html( data.activityHTML );
              $('#Title').html(data.longName)
