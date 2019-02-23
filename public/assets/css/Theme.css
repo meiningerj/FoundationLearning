@@ -845,8 +845,9 @@ input.UserAnswer {
     width: 80%;
 }
 blockquote{
-  text-align: center;
   font-family: monospace;
+  padding-left: 20%;
+  background-color: white;
 }
 #CodingInstructions{
   height: 100%;
