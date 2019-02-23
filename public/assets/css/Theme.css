@@ -844,3 +844,10 @@ textarea.form-control {
 input.UserAnswer {
     width: 80%;
 }
+blockquote{
+  text-align: center;
+  font-family: monospace;
+}
+#CodingInstructions{
+  height: 100%;
+}
