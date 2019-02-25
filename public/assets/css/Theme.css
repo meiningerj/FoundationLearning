@@ -558,7 +558,7 @@ li {
 
 .tab-content {
   height: 100%;
-  /* overflow-y: scroll; */
+  overflow-y: scroll;
 }
 
 #LectureNotes, #CodingInstructions {
@@ -849,6 +849,6 @@ blockquote{
   padding-left: 20%;
   background-color: white;
 }
-#OutputAndInstruc{
+#OutputAndInstruc #CodingInstructions #TerminalInstructions{
   height: 100%;
 }
