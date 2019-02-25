@@ -849,6 +849,6 @@ blockquote{
   padding-left: 20%;
   background-color: white;
 }
-#OutputAndInstruc #CodingInstructions #TerminalInstructions{
+#OutputAndInstruc, #CodingInstructions, #TerminalInstructions{
   height: 100%;
 }
